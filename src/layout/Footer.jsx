@@ -72,9 +72,9 @@ const Footer = () => {
                     <div className="p-5">
                         <p className="text-white text-md font-bold pb-4">Categories</p>
                         <ul>
-                            {footerData.category.map(data => (
+                            {footerData.category.map((data, index) => (
                                 <li
-                                    key={crypto.randomUUID()}
+                                    key={index}
                                     className="text-neutral-500 text-sm pb-2 hover:text-yellow-600 cursor-pointer"
                                 >
                                     <a href={data.link}>{data.title}</a>
@@ -87,9 +87,9 @@ const Footer = () => {
                     <div className="p-5">
                         <p className="text-white text-md font-bold pb-4">Recent Hot Post</p>
                         <ul>
-                            {footerData.recent.map(data => (
+                            {footerData.recent.map((data, index) => (
                                 <li
-                                    key={crypto.randomUUID()}
+                                    key={index}
                                     className="text-neutral-500 text-sm pb-2 hover:text-yellow-600 cursor-pointer"
                                 >
                                     <a href={data.link}>{data.title}</a>
@@ -102,9 +102,9 @@ const Footer = () => {
                     <div className="p-5">
                         <p className="text-white text-md font-bold pb-4">Recent Hot Post</p>
                         <ul>
-                            {footerData.topRate.map(data => (
+                            {footerData.topRate.map((data, index) => (
                                 <li
-                                    key={crypto.randomUUID()}
+                                    key={index}
                                     className="text-neutral-500 text-sm pb-2 hover:text-yellow-600 cursor-pointer"
                                 >
                                     <a href={data.link}>{data.title}</a>
